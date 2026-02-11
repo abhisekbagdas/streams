@@ -9,6 +9,7 @@ st.title("Remove Backgroung")
 upload_file = st.file_uploader("Upload your image")
 
 if upload_file:
+  st.spinner("Removing Background...")
   img = Image.open(upload_file)
   st.subheader("Orignal Image")
   st.image(img, use_container_width = True)
